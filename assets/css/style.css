@@ -1,86 +1,93 @@
-html,
-body {
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: beige;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-h1,
-h2 {
-    color: darkred;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #222;
 }
 
-h3, 
-p,
-li {
-    color: green;
+.logo {
+    color: #ff6b00;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-main {
-    margin: 0 20%;
+.nav-links li {
+    margin-left: 25px;
 }
 
-nav {
-    background-color: beige;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-}
-
-nav a {
+.nav-links a {
     text-decoration: none;
-    font-size: 1.6em;
-    color: green;
-    margin-right: 25px;
+    color: white;
+    font-weight: 500;
 }
 
-nav a:hover {
-    color: darkred;
+.nav-links a:hover {
+    color: #ff6b00;
 }
 
-#banner {
-    width: 100%;
-    height: auto;
-    background-color: white;
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1553621042-f6e147245754') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
-#banner img {
-    width: 60%;
-    height: auto;
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-.service {
-    display: inline-block;
-    background-color: white;
-    border: 5px solid green;
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
-    color: darkred;
-    font-size: 2em;
-    padding: 20px;
-    margin: 10px;
 }
 
-table {
-    border: 3px solid black;
-    width: 100%;
+.btn:hover {
+    background-color: #e65c00;
 }
-  
-td,
-th {
-    border: 1px solid black;
-    padding: 5px;
+
+/* About Section */
+.about {
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
